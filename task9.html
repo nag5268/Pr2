@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task9.css">
+</head>
+<body>
+    <center><section>
+        
+        <form action="https://formsubmit.co/nagc7434@gmail.com" method="post">
+        <h1><b>Registration Form</b></h1>
+        <br>
+        <label for="Fname">First Name<span style="color: red;">*</span> : </label>
+        <input type="text" name="Fname" id="Fname" value=""required>
+        <br><br>
+        <label for="Mname">Middle Name: </label>
+        <input type="text" name="Mname" id="Mname" value="">
+        <br><br>
+        <label for="Lname">Last Name<span style="color: red;">*</span> : </label>
+        <input type="text" name="Lname" id="Lname" value=""required>
+        <br><br>
+        <label>Gender<span style="color: red;">*</span> : </label>
+        <input type="radio" name="gender" id="gen" value="Gender">
+        <label for="gen">Male</label> 
+        <input type="radio" name="gender" id="gen" value="Gender">
+        <label for="gen">Female</label>   
+        <input type="radio" name="gender" id="gen" value="Gender">
+        <label for="gen">Others</label>
+        <br><br>
+
+        <label for="father">Father Name<span style="color: red;">*</span> : </label>
+        <input type="text" name="father" id="father" value=""required>
+        <br><br>
+        <label for="dob">Date of Birth<span style="color: red;">*</span> : </label>
+        <input type="date" name="DOB" id="dob" value="dob"required>
+        <br><br>
+        <label for="tel">Phone Number<span style="color: red;">*</span> : </label>
+        <input type="tel" name="tel" id="tel" value=""required>
+        <br><br>
+        <label for="mail">E-mail<span style="color: red;">*</span> :</label>
+        <input type="text" name="mail" id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required title="Enter a valid email address.">
+        <br><br>
+        <label for="pass">Password<span style="color: red;">*</span> : </label>
+        <input type="password" name="pass" id="pass" value="" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" required title="Enter Password more than 8 characters">
+        <br><br>
+        <label for="edu">Graduation<span style="color: red;">*</span> : </label>
+        <select name="education" id="edu">
+            <option value="Select">Select</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Degree">Degree</option>
+            <option value="Polytech">Polytechnic</option>
+            <option value="other">Others</option>
+        </select>
+        <br><br>
+        <label>SKILLS : </label>
+            <input type="checkbox" name="HTML" id="html" value="HTML">
+        <label for="html">HTML</label> 
+        <input type="checkbox" name="CSS" id="html" value="CSS">
+        <label for="html">CSS</label>
+        <input type="checkbox" name="JS" id="html" value="JS">
+        <label for="html">JavaScript</label>
+        <input type="checkbox" name="RJS" id="html" value="RJS">
+        <label for="html">React Js</label>
+        <input type="checkbox" name="Java" id="html" value="JAVA">
+        <label for="html">JAVA</label>
+        <input type="checkbox" name="Python" id="html" value="Python">
+        <label for="html">PYTHON</label>
+        <br><br>
+
+        <label for="resume">Upload Resume<span style="color: red;">*</span> : </label>
+        <input type="file" name="resume" id="resume" value="my_resume">
+
+        <br><br><br><br>
+
+        <input type="reset" name="reset" id="res" value="RESET" onclick="Res()">
+
+        <input type="submit" name="submit" id="sub" value="SUBMIT" onclick="Sub()">
+        
+    
+
+    </form>
+</section>
+
+</center>
+
+<script>
+    function Sub(){
+        alert("Hi User /n We are submitting details.")
+    }
+
+    function Res(){
+        alert("Restting all details..")
+    }
+</script>
+    
+</body>
+</html>
